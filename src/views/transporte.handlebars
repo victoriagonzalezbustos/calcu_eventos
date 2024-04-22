@@ -1,0 +1,27 @@
+<h1>Transporte</h1>
+<div id="contenedorProductos" class="contenedorProductos"></div>
+
+<h2>Completa </h2>
+
+<form action="/api/transporte/{{tipo}}" method="post">
+    <input type="number" id="kmauto" name="kmauto" placeholder="km auto">
+    <input type="number" id="kmcamioneta" name="kmcamioneta" placeholder="km camioneta">
+    <input type="number" id="kmmoto" name="kmmoto" placeholder="km moto">
+    <input type="number" id="kmcombi" name="kmcombi" placeholder="km combi">
+    <input type="number" id="kmtransportepublico" name="kmtransportepublico" placeholder="km transporte publico">
+    <input type="number" id="kmbus" name="kmbus" placeholder="km bus">
+    <input type="number" id="kmavion" name="kmavion" placeholder="km avion">
+
+
+    <button type="submit" id="BotonEnviar">Enviar</button>
+
+
+    
+    {{#if mixto}}
+        <button ><a href="/asistentesvirtuales/mixto">Atras</a></button>
+    {{else}}
+        <button ><a href="/tipo">Atras</a></button>
+    {{/if}}
+    
+
+</form>

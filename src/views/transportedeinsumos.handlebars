@@ -1,0 +1,21 @@
+<h1>Transporte de insumos</h1>
+<div id="contenedorProductos" class="contenedorProductos"></div>
+
+<h2>Completa </h2>
+
+<form action="/api/transportedeinsumos/{{tipo}}" method="post">
+    <input type="number" id="camion_refrigerado" name="camion_refrigerado" placeholder="km camion refrigerado">
+    <input type="number" id="camion_no_refrigerado" name="camion_no_refrigerado" placeholder="km camion_no_refrigerado">
+    <input type="number" id="van" name="van" placeholder="km van">
+
+
+
+
+    <button type="submit" id="BotonEnviar">Enviar</button>
+    {{#if mixto}}
+        <button ><a href="/transporte/mixto">Atras</a></button>
+    {{else}}
+        <button ><a href="/transporte/presencial">Atras</a></button>
+    {{/if}}
+    
+</form>

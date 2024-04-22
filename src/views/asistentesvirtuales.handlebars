@@ -1,0 +1,39 @@
+<h1>Transporte</h1>
+<div id="contenedorProductos" class="contenedorProductos"></div>
+
+<h2>Completa </h2>
+
+<form action="/api/asistentesvirtuales/{{tipo}}" method="post">
+
+    <input type="number" id="alemania" name="alemania" placeholder="numero participantes">
+    <input type="number" id="argentina" name="argentina" placeholder="numero participantes">
+    <input type="number" id="belgica" name="belgica" placeholder="numero participantes">
+    <input type="number" id="brasil" name="brasil" placeholder="numero participantes">
+    <input type="number" id="chile" name="chile" placeholder="numero participantes">
+    <input type="number" id="colombia" name="colombia" placeholder="numero participantes">
+    <input type="number" id="costa_rica" name="costa_rica" placeholder="numero participantes">
+    <input type="number" id="eslovenia" name="eslovenia" placeholder="numero participantes">
+    <input type="number" id="espana" name="espana" placeholder="numero participantes">
+    <input type="number" id="usa" name="usa" placeholder="numero participantes">
+    <input type="number" id="francia" name="francia" placeholder="numero participantes">
+    <input type="number" id="inglaterra" name="inglaterra" placeholder="numero participantes">
+    <input type="number" id="italia" name="italia" placeholder="numero participantes">
+    <input type="number" id="mexico" name="mexico" placeholder="numero participantes">
+    <input type="number" id="peru" name="peru" placeholder="numero participantes">
+    <input type="number" id="polonia" name="polonia" placeholder="numero participantes">
+    <input type="number" id="republica_checa" name="republica_checa" placeholder="numero participantes">
+    <input type="number" id="uruguay" name="uruguay" placeholder="numero participantes">
+
+    
+
+
+    <button type="submit" id="BotonEnviar">Enviar</button>
+    {{#if mixto}}
+        <button ><a href="/tipo">Atras</a></button>
+    {{else}}
+        <button ><a href="/tipo">Atras</a></button>
+    {{/if}}
+
+   
+</form>
+

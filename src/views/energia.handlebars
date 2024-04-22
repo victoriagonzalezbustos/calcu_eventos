@@ -1,0 +1,26 @@
+<h1>Energia</h1>
+<div id="contenedorProductos" class="contenedorProductos"></div>
+
+<h2>Completa </h2>
+
+<form action="/api/energia/{{tipo}}" method="post">
+    <select  id="respuesta" name="respuesta">
+        <option value="elegi">Elegi </option>
+        <option value="Si">Si</option>
+        <option value="No">No</option>
+    </select>
+    <input type="number" id="superficie_cubierta" name="superficie_cubierta" placeholder="superficie cubierta m2" disabled>
+    <input type="number" id="energia_renovable" name="energia_renovable" placeholder="% energia renovable" disabled>
+
+
+
+
+    <button type="submit" id="BotonEnviar">Enviar</button>
+        {{#if mixto}}
+        <button ><a href="/alojamiento/mixto">Atras</a></button>
+    {{else}}
+        <button ><a href="/alojamiento/presencial">Atras</a></button>
+    {{/if}}
+</form>
+
+<script src="js/main.js"></script> 

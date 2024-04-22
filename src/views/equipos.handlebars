@@ -1,0 +1,23 @@
+<h1>Transporte de insumos</h1>
+<div id="contenedorProductos" class="contenedorProductos"></div>
+
+<h2>Completa </h2>
+
+<form action="/api/equipos/{{tipo}}" method="post">
+    <input type="number" id="pantallas_led" name="pantallas_led" placeholder="pantallas led">
+    <input type="number" id="monitores" name="monitores" placeholder="monitores/notebooks">
+    <input type="number" id="televisores" name="televisores" placeholder="televisores">
+    <input type="number" id="equipos_audio" name="equipos_audio" placeholder="equipos de audio">
+    <input type="number" id="consolas" name="consolas" placeholder="consolas">
+    <input type="number" id="proyectores" name="proyectores" placeholder="proyectores">
+
+
+
+
+    <button type="submit" id="BotonEnviar">Enviar</button>
+       {{#if mixto}}
+        <button ><a href="/combustibles/mixto">Atras</a></button>
+    {{else}}
+        <button ><a href="/combustibles/presencial">Atras</a></button>
+    {{/if}}
+</form>

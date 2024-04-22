@@ -1,0 +1,19 @@
+<h1>Comida</h1>
+<div id="contenedorProductos" class="contenedorProductos"></div>
+
+<h2>Completa </h2>
+
+<form action="/api/comida/{{tipo}}" method="post">
+    <input type="number" id="comida" name="comida" placeholder="numero de comidas">
+
+
+
+
+
+    <button type="submit" id="BotonEnviar">Enviar</button>
+    {{#if mixto}}
+        <button ><a href="/equipos/mixto">Atras</a></button>
+    {{else}}
+        <button ><a href="/equipos/presencial">Atras</a></button>
+    {{/if}}
+</form>

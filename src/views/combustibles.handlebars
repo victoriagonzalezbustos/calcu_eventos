@@ -1,0 +1,20 @@
+<h1>Transporte de insumos</h1>
+<div id="contenedorProductos" class="contenedorProductos"></div>
+
+<h2>Completa </h2>
+
+<form action="/api/combustibles/{{tipo}}" method="post">
+    <input type="number" id="GLP" name="GLP" placeholder="GLP en m3">
+    <input type="number" id="diesel" name="diesel" placeholder="lts diesel">
+    
+
+
+
+
+    <button type="submit" id="BotonEnviar">Enviar</button>
+        {{#if mixto}}
+        <button ><a href="/energia/mixto">Atras</a></button>
+    {{else}}
+        <button ><a href="/energia/presencial">Atras</a></button>
+    {{/if}}
+</form>

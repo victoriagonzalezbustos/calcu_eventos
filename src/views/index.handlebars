@@ -1,0 +1,30 @@
+<h1>Transporte</h1>
+<div id="contenedorProductos" class="contenedorProductos"></div>
+
+<h2>Completa </h2>
+
+<form action="/api/inicio" method="post">
+    <input type="text" id="nombre_evento" name="nombre_evento" placeholder="nombre del evento">
+    <input type="text" id="empresa" name="empresa" placeholder="empresa organizadora">
+    <select  id="pais" name="pais">
+        <option value="argentina">argentina</option>
+        <option value="uruguay">uruguay</option>
+        <option value="chile">chile</option>
+    </select>
+    <select  id="industria" name="industria">
+        <option value="agro">agro</option>
+        <option value="retail">retail</option>
+        <option value="mineria">mineria</option>
+    </select>
+    <input type="number" id="horas" name="horas" placeholder="horas totales">
+    <input type="number" id="participantes" name="participantes" placeholder="participantes totales">
+    
+
+
+    <button type="submit" id="BotonEnviar">Enviar</button>
+    <button ><a href="/email">Atras</a></button>
+
+   
+</form>
+
+<script src="js/main.js"></script> 
